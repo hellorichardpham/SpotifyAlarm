@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import java.util.Random;
 
 import com.spotify.sdk.android.authentication.AuthenticationClient;
 import com.spotify.sdk.android.authentication.AuthenticationRequest;
@@ -31,6 +32,7 @@ import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
+import static android.R.attr.max;
 import static android.R.id.list;
 
 public class MainActivity extends Activity implements
@@ -45,6 +47,8 @@ public class MainActivity extends Activity implements
     private Player mPlayer;
 
     SpotifyApi wrapper;
+    SpotifyService spotify;
+    
     // Request code that will be used to verify if the result comes from correct activity
     // Can be any integer
     private static final int REQUEST_CODE = 1337;
@@ -64,24 +68,9 @@ public class MainActivity extends Activity implements
 
 
         wrapper = new SpotifyApi();
+        spotify = wrapper.getService();
 
-         SpotifyService spotify = wrapper.getService();
 
-         spotify.getAlbum("1lXY618HWkwYKJWBRYR4MK", new Callback<Album>() {
-             @Override
-             public void success(Album album, Response response) {
-                 Log.d("Album success", album.name);
-                 Pager<TrackSimple> pager =  album.tracks;
-                 List<TrackSimple> list = pager.items;
-                 for(int i = 0; i < list.size(); i++) {
-                     System.out.println("TrackSimple: " + list.get(i).name);
-                 }
-             }
-             @Override
-             public void failure(RetrofitError error) {
-                 Log.d("Album failure", error.toString());
-             }
-         });
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.search_results);
         Context context = getApplicationContext();
@@ -152,7 +141,29 @@ public class MainActivity extends Activity implements
     public void onLoggedIn() {
         Log.d("MainActivity", "User logged in");
 
-        mPlayer.playUri(null, "spotify:user:125759705:playlist:3XTblfwdf0KLInAYUhq6Hn", 0, 0);
+        spotify.getAlbum("1lXY618HWkwYKJWBRYR4MK", new Callback<Album>() {
+            @Override
+            public void success(Album album, Response response) {
+                Log.d("Album success", album.name);
+                Pager<TrackSimple> pager =  album.tracks;
+                List<TrackSimple> list = pager.items;
+
+                Random r = new Random();
+                int rand = r.nextInt(10 - 1) + 1;
+
+                for(int i = 0; i < list.size(); i++) {
+                    System.out.println("TrackSimple: " + list.get(i).name);
+                }
+                System.out.printf("I'm playing: %s\n", list.get(rand).name);
+                mPlayer.playUri(null, list.get(rand).uri, 0, 0);
+
+            }
+            @Override
+            public void failure(RetrofitError error) {
+                Log.d("Album failure", error.toString());
+            }
+        });
+        //mPlayer.playUri(null, "spotify:user:125759705:playlist:3XTblfwdf0KLInAYUhq6Hn", 0, 0);
     }
 
     @Override

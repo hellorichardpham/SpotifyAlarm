@@ -5,22 +5,22 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="44303746019192"
+    timestamp="45111021657362"
     token="5765572733933961246"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="73" />
+        duration="93" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="5" />
+        duration="34" />
     <task
         name="verifier"
-        duration="1" />
+        duration="2" />
 
     <artifact
         location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
@@ -53,7 +53,7 @@
             type="DEX" />
     </build>
     <build
-        timestamp="44303746019192"
+        timestamp="45111021657362"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
