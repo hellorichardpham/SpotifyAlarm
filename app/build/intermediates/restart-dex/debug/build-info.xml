@@ -5,59 +5,47 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="45111021657362"
+    timestamp="52971219838545"
     token="5765572733933961246"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="93" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="34" />
+        duration="0" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
     <artifact
-        location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-        type="DEX" />
+        location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="41022263369162"
+        timestamp="52604602809765"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/dylantieu/Desktop/SpotifyExample/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="41104378749325"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-22.2.1_8801f041358304537ed75755c1069e884c50ef23/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="45111021657362"
+        timestamp="52866902736241"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
             type="DEX" />
+    </build>
+    <build
+        timestamp="52971219838545"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

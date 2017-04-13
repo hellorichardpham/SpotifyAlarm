@@ -45,10 +45,11 @@ public class MainActivity extends Activity implements
     private static final String REDIRECT_URI = "spotifyalarm://callback";
 
     private Player mPlayer;
+    private SongAdapter mAdapter;
 
     SpotifyApi wrapper;
     SpotifyService spotify;
-    
+    RecyclerView recyclerView;
     // Request code that will be used to verify if the result comes from correct activity
     // Can be any integer
     private static final int REQUEST_CODE = 1337;
@@ -72,7 +73,8 @@ public class MainActivity extends Activity implements
 
 
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.search_results);
+
+        recyclerView = (RecyclerView) findViewById(R.id.search_results);
         Context context = getApplicationContext();
         final LinearLayoutManager layoutManager = new LinearLayoutManager(context);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -147,6 +149,11 @@ public class MainActivity extends Activity implements
                 Log.d("Album success", album.name);
                 Pager<TrackSimple> pager =  album.tracks;
                 List<TrackSimple> list = pager.items;
+
+                //Not sure if this is adding the entire more life list to it
+                mAdapter = new SongAdapter(getApplicationContext(), list);
+
+                recyclerView.setAdapter(mAdapter);
 
                 Random r = new Random();
                 int rand = r.nextInt(10 - 1) + 1;
