@@ -1,0 +1,7 @@
+#Wed Apr 12 21:22:02 PDT 2017
+base.0=/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5b06aa111e6dd0e7825567c6dc65dfbd40494120
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0127981615277b894c4ab5a8387b672ed24151c5/classes.dex
+base.1=/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0127981615277b894c4ab5a8387b672ed24151c5
+file.0=/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5b06aa111e6dd0e7825567c6dc65dfbd40494120/classes.dex
