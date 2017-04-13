@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/exploded-aar/com.github.kaaes/spotify-web-api-android/0.4.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="785444f1c6a6b880b9aa0efb9a2464cb6c51f8dc">
+        <dex dex="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.kaaes-spotify-web-api-android-0.4.1_791f62627b532765bcffd0ef317b8faa7bbe018d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/exploded-aar/com.spotify.sdk/spotify-player-24-noconnect-2.20b/jars/libs/jnihelpers-1.0.jar"
         jumboMode="true"
         optimize="true"
@@ -39,11 +48,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/dylantieu/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3.1_de4e7ef380a1ddf8c2c019e869ec3e60d4a1230f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="210af9e949e85c2490c4b3d121a3820581864f76">
+        sha1="2f02da056e06333e42008a06b2f1975125e50601">
         <dex dex="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5b06aa111e6dd0e7825567c6dc65dfbd40494120/classes.dex" />
     </item>
     <item
@@ -57,21 +75,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_c63a8735f74512e065250d2c34494cb529ac1cb7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f83b00041ecfba705603fec40363416c7de69719">
         <dex dex="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_a4163c0edc5645ff993ffa97fea62fe5eb27c293/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_c63a8735f74512e065250d2c34494cb529ac1cb7/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -156,12 +174,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/dylantieu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-1.9.0_f74553690b9e3761402dbdee3df64a229ffa6877/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="418231bf87315af02bbff842ab537e952e549cb1">
+        sha1="e2f4442579736c8632fa50919c32302044ce0080">
         <dex dex="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0127981615277b894c4ab5a8387b672ed24151c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-22.2.1_8801f041358304537ed75755c1069e884c50ef23/classes.dex" />
     </item>
     <item
         is-multidex="true"

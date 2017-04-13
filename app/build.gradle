@@ -40,7 +40,12 @@ dependencies {
     compile 'com.github.spotify:android-auth:9425c6a140'
     compile 'com.spotify.sdk:spotify-player-24-noconnect-2.20b@aar'
 
-    compile 'com.android.support:appcompat-v7:25.0.1'
+    //Wrapper for web API
+    compile 'com.github.kaaes:spotify-web-api-android:0.4.1'
 
+
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    
     testCompile 'junit:junit:4.12'
 }

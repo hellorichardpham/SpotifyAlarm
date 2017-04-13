@@ -1,8 +1,11 @@
 package com.rwpham.spotifyexample;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.spotify.sdk.android.authentication.AuthenticationClient;
@@ -16,6 +19,20 @@ import com.spotify.sdk.android.player.PlayerEvent;
 import com.spotify.sdk.android.player.Spotify;
 import com.spotify.sdk.android.player.SpotifyPlayer;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import kaaes.spotify.webapi.android.SpotifyApi;
+import kaaes.spotify.webapi.android.SpotifyService;
+import kaaes.spotify.webapi.android.models.Album;
+import kaaes.spotify.webapi.android.models.Pager;
+import kaaes.spotify.webapi.android.models.TrackSimple;
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
+
+import static android.R.id.list;
+
 public class MainActivity extends Activity implements
         SpotifyPlayer.NotificationCallback, ConnectionStateCallback
 {
@@ -27,6 +44,7 @@ public class MainActivity extends Activity implements
 
     private Player mPlayer;
 
+    SpotifyApi wrapper;
     // Request code that will be used to verify if the result comes from correct activity
     // Can be any integer
     private static final int REQUEST_CODE = 1337;
@@ -43,7 +61,39 @@ public class MainActivity extends Activity implements
         AuthenticationRequest request = builder.build();
 
         AuthenticationClient.openLoginActivity(this, REQUEST_CODE, request);
+
+
+        wrapper = new SpotifyApi();
+
+         SpotifyService spotify = wrapper.getService();
+
+         spotify.getAlbum("1lXY618HWkwYKJWBRYR4MK", new Callback<Album>() {
+             @Override
+             public void success(Album album, Response response) {
+                 Log.d("Album success", album.name);
+                 Pager<TrackSimple> pager =  album.tracks;
+                 List<TrackSimple> list = pager.items;
+                 for(int i = 0; i < list.size(); i++) {
+                     System.out.println("TrackSimple: " + list.get(i).name);
+                 }
+             }
+             @Override
+             public void failure(RetrofitError error) {
+                 Log.d("Album failure", error.toString());
+             }
+         });
+
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.search_results);
+        Context context = getApplicationContext();
+        final LinearLayoutManager layoutManager = new LinearLayoutManager(context);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(layoutManager);
+
+
     }
+
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
@@ -53,6 +103,7 @@ public class MainActivity extends Activity implements
         if (requestCode == REQUEST_CODE) {
             AuthenticationResponse response = AuthenticationClient.getResponse(resultCode, intent);
             if (response.getType() == AuthenticationResponse.Type.TOKEN) {
+                wrapper.setAccessToken(response.getAccessToken());
                 Config playerConfig = new Config(this, response.getAccessToken(), CLIENT_ID);
                 Spotify.getPlayer(playerConfig, this, new SpotifyPlayer.InitializationObserver() {
                     @Override

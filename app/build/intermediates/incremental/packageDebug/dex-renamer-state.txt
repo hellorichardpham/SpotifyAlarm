@@ -1,4 +1,4 @@
-#Wed Apr 12 21:22:02 PDT 2017
+#Wed Apr 12 22:27:57 PDT 2017
 base.0=/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5b06aa111e6dd0e7825567c6dc65dfbd40494120
 renamed.1=classes2.dex
 renamed.0=classes.dex
