@@ -5,26 +5,29 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="52971219838545"
+    timestamp="53184637685830"
     token="5765572733933961246"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="338" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="24" />
     <task
         name="verifier"
-        duration="0" />
+        duration="5" />
 
     <artifact
         location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
         type="RESOURCES" />
+    <artifact
+        location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+        type="DEX" />
 
     <build
         timestamp="52604602809765"
@@ -34,18 +37,14 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="52866902736241"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="52971219838545"
+        timestamp="53184637685830"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
             type="RESOURCES" />
+        <artifact
+            location="/Users/dylantieu/Desktop/SpotifyExample/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

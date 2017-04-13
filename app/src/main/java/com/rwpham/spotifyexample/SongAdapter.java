@@ -76,7 +76,7 @@ public class SongAdapter extends
         // Set item views based on your views and data model
         TextView artistTextView = viewHolder.artist;
         artistTextView.setText(artist);
-        TextView titleTextView = viewHolder.artist;
+        TextView titleTextView = viewHolder.title;
         titleTextView.setText(title);
     }
 

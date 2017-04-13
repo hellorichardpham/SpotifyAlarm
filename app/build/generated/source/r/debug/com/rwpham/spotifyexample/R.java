@@ -1864,7 +1864,7 @@ containing a value of this type.
         public static final int add=0x7f0b0014;
         public static final int alertTitle=0x7f0b0034;
         public static final int always=0x7f0b001e;
-        public static final int artist=0x7f0b0071;
+        public static final int artist=0x7f0b0070;
         public static final int beginning=0x7f0b001b;
         public static final int bottom=0x7f0b0023;
         public static final int buttonPanel=0x7f0b002f;
@@ -1883,7 +1883,6 @@ containing a value of this type.
         public static final int edit_query=0x7f0b0048;
         public static final int end=0x7f0b001c;
         public static final int end_padder=0x7f0b006f;
-        public static final int entity_image=0x7f0b0070;
         public static final int expand_activities_button=0x7f0b0029;
         public static final int expanded_menu=0x7f0b003c;
         public static final int home=0x7f0b0004;

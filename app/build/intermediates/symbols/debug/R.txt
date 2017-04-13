@@ -543,7 +543,7 @@ int id activity_chooser_view_content 0x7f0b0028
 int id add 0x7f0b0014
 int id alertTitle 0x7f0b0034
 int id always 0x7f0b001e
-int id artist 0x7f0b0071
+int id artist 0x7f0b0070
 int id beginning 0x7f0b001b
 int id bottom 0x7f0b0023
 int id buttonPanel 0x7f0b002f
@@ -562,7 +562,6 @@ int id disableHome 0x7f0b000d
 int id edit_query 0x7f0b0048
 int id end 0x7f0b001c
 int id end_padder 0x7f0b006f
-int id entity_image 0x7f0b0070
 int id expand_activities_button 0x7f0b0029
 int id expanded_menu 0x7f0b003c
 int id home 0x7f0b0004
